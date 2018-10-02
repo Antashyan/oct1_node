@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="left" id="messages"></div>
+        <div class="right" id="users"></div>
+        <div class="footer">
+            <textarea name="text" id="text"></textarea>
+            <button type="button" id="btn">SEND</button>
+        </div>
+    </div>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io.connect('http://localhost:3001');
+    socket.on('message', function(data){
+
+      alert(data.name);
+    });
+    socket.emit("hello", {age:25});
+</script>

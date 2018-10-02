@@ -1,0 +1,37 @@
+.box{
+    width: 600px;
+    height: 500px;
+    border: 1px solid #ccc;
+}
+.left{
+    display: inline-block;
+    width: 100px;
+    height: 500px;
+    border-right: 1px solid #555;
+}
+.right{
+    display: inline-block;
+    background: #eee;
+    color: #000;
+    font-size: 16px;
+    height: 500px;
+    width: 490px;
+}
+.box span{
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.footer textarea{
+    display: inline-block;
+    height: 50px;
+    width: 300px;
+    float: left;
+}
+.footer button{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 10px 15px;
+    color: #222;
+    width: 150px;
+}
